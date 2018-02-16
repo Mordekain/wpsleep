@@ -4,10 +4,10 @@ Plugin Name: wpSLEEP
 Text Domain: wpsleep
 Domain Path: /lang
 Description: Easy date and time control for custom parts of a blog post. Graphical and textual elements can be hide or unhide at a specific time.
-Author: Sergej M&uuml;ller
-Author URI: http://www.wpSEO.org
-Plugin URI: http://playground.ebiene.de/498/wordpress-plugin-wpsleep-time-control-for-parts-of-a-post/
-Version: 0.6
+Author: Thomas Kirste
+Author URI: http://www.tk-websolution.de
+Plugin URI: https://github.com/Mordekain/wpsleep
+Version: 0.7
 */
 
 
