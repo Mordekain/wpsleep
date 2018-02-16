@@ -11,11 +11,10 @@ Version: 0.7
 */
 
 
-if (!function_exists ('is_admin')) {
-	header('Status: 403 Forbidden');
-	header('HTTP/1.1 403 Forbidden');
-	exit();
+if ( ! defined( 'ABSPATH' ) ) { // prevent full path disclosure
+	exit;
 }
+define('WPSLEEP_PLUGIN_VERSION', '0.7');
 
 class wpSLEEP {
 	function wpSLEEP() {
