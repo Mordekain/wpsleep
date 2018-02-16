@@ -15,8 +15,6 @@ if ( ! defined( 'ABSPATH' ) ) { // prevent full path disclosure
 	exit;
 }
 
-define('WPSLEEP_PLUGIN_VERSION', '0.7');
-
 class wpSLEEP {
 	function __construct() {
 		if ((defined('DOING_AUTOSAVE') && DOING_AUTOSAVE) OR (defined('DOING_AJAX') && DOING_AJAX) OR (defined('DOING_CRON') && DOING_CRON)) {
@@ -31,12 +29,12 @@ class wpSLEEP {
 		$start = @$attr['start'];
 		$end = @$attr['end'];
 		$alt = @$attr['alt'];
-		
+
 		$time = current_time('timestamp');
-		
+
 		$regtime = '/^([\d]{1,2}+):([\d]{1,2}+)$/';
 		$regdate = '/^([\d]{1,2}+)[\.]+([\d]{1,2}+)[\.]+([\d]{4})([\s]*([\d]{1,2}+):([\d]{1,2}+))?$/';
-		
+
 		if ($start) {
 			if (preg_match($regtime, $start, $sdata) && $time >= mktime($sdata[1], $sdata[2])) {
 				if ($end && preg_match($regtime, $end, $edata) && $time >= mktime($edata[1], $edata[2])) {
