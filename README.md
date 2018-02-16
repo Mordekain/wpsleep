@@ -2,8 +2,8 @@
 Weiterentwicklung wpsleep Wordpress Plugin
 
 = Examples =
-* `&#91;wpsleep start="31.12.2010 09:00"&#93;`This section is now offline, but from 31.12.2010 9 am for everyone viewable`&#91;/wpsleep&#93;`
-* `&#91;wpsleep start="07.10.2010 09:00" end="08.10.2010" alt="Alt text"&#93;`This section is only for a few hours viewable, the rest of the time you see the alternative text`&#91;/wpsleep&#93;`
+* [wpsleep start="31.12.2010 09:00]This section is now offline, but from 31.12.2010 9 am for everyone viewable[/wpsleep]
+* [wpsleep start="07.10.2010 09:00" end="08.10.2010" alt="Alt text"]This section is only for a few hours viewable, the rest of the time you see the alternative text[/wpsleep]
 
 
 == Installation ==
